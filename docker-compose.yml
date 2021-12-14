@@ -1,12 +1,12 @@
 version: '3.6'
 services:
   nginx-front:
-    image: nginx:1.17.8
+    image: nginx
     ports:
       - 80:80
     volumes:
     - ./code-website:/code
-    - ./docker/new-configuration-nginx.conf:/etc/nginx/conf.d/new-configuration-nginx.conf
+    - ./Nginx/new-nginx.conf:/etc/nginx/conf.d/new-nginx.conf
 
 
         
