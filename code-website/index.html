@@ -1,18 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="flower.css"/>
+<title>C A C T U S</title>
+</head>
 <body>
-The color of grass is <b id="result-box"></b>
-</body>
+<div class="text-align">
+<p>CACTUS</p>
+<a href="https://kaktus-world.ru/klassifikaciya-kaktusov-po-rodam-vidam/">CACTUS THERE!</a>
+</div>
 </html>
-
-<script type="text/javascript">
-    let ajax = new XMLHttpRequest();
-    ajax.open('GET', 'api/getColor/grass', false);
-    ajax.send();
-
-    if (ajax.status !== 200) {
-        alert( ajax.status + ': ' + ajax.statusText );
-    } else {
-        let resultBox = document.getElementById("result-box");
-        resultBox.innerText = JSON.parse(ajax.responseText);
-    }
-</script>
